@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBq-fv-kEG">
+                        <rect key="frame" x="8" y="11" width="247" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aic-yv-wbb">
+                        <rect key="frame" x="263" y="6" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KBq-fv-kEG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="1DW-Sl-NID"/>
+                    <constraint firstItem="KBq-fv-kEG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="4Zi-v3-Qub"/>
+                    <constraint firstAttribute="trailing" secondItem="Aic-yv-wbb" secondAttribute="trailing" constant="8" id="Lrb-Ar-FCZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Aic-yv-wbb" secondAttribute="bottom" constant="7" id="c2b-dM-cQW"/>
+                    <constraint firstItem="Aic-yv-wbb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="etm-Na-oTR"/>
+                    <constraint firstAttribute="bottom" secondItem="KBq-fv-kEG" secondAttribute="bottom" constant="12" id="n93-dg-plE"/>
+                    <constraint firstItem="Aic-yv-wbb" firstAttribute="leading" secondItem="KBq-fv-kEG" secondAttribute="trailing" constant="8" id="quS-dL-3tB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="optionLabel" destination="KBq-fv-kEG" id="xAt-JF-pJb"/>
+                <outlet property="optionValue" destination="Aic-yv-wbb" id="jG8-LF-yPm"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
